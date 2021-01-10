@@ -5,8 +5,8 @@
   color: var(--default-text);
   text-shadow: 1px 1px 1px black;
 
-  --main-bg: #222831;
-  --second-bg: #393e46;
+  --main-bg: #131b21;
+  --second-bg: #202225;
   --default-text: #eeeeee;
   --low-contrast: #112d4e;
   --medium-contrast: #00adb5;
@@ -17,6 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100vw;
+  min-height: 100vh;
   background-color: var(--main-bg);
 }
 
@@ -25,9 +26,12 @@ body {
   display: flex;
   height: 75px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   text-transform: uppercase;
   padding: 5px 25px 5px 25px;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 0px 5px #0f1011;
 }
 
 #header .logoDiv {
@@ -92,4 +96,37 @@ body {
 
 #header .dropdown-content.active {
   display: flex;
+}
+
+#lmain {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  background: linear-gradient(-45deg, #0b1114 #131b21, #0b1114);
+}
+
+#main {
+  max-width: 1000px;
+  width: 100%;
+}
+
+#footer {
+  max-width: 1000px;
+  padding: 15px;
+  text-align: center;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#lfooter {
+  box-shadow: 0px 0px 10px #0f1011;
+  background-color: var(--second-bg);
+  display: flex;
+  justify-content: center;
+}
+
+#footer .lowSize {
+  font-size: 0.8rem;
 }
