@@ -2,7 +2,16 @@ const pt = document.querySelectorAll('span[lang=pt]');
 const en = document.querySelectorAll('span[lang=en]');
 const dropdownContent = document.querySelector('.dropdown-content');
 
-pt.forEach((element) => (element.style.display = 'none'));
+function setLang(lang) {
+  const langs = [en, pt];
+  const langsObj = { en: en, pt: pt };
+  langs.forEach((lang) =>
+    lang.forEach((element) => (element.style.display = 'none'))
+  );
+  langsObj[lang].forEach((element) => (element.style.display = 'block'));
+}
+
+setLang('en'); // Change it to localStorarge in future
 
 document.querySelector(
   'span#footer-date'
