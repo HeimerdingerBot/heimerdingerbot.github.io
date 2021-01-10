@@ -25,21 +25,71 @@ body {
   display: flex;
   height: 75px;
   align-items: center;
+  justify-content: space-between;
   text-transform: uppercase;
   padding: 5px 25px 5px 25px;
 }
 
+#header .logoDiv {
+  display: flex;
+  align-items: center;
+}
+
 #header h1 {
-  font-family: "Bebas Neue", cursive;
+  font-family: 'Bebas Neue', cursive;
   margin: 15px;
   font-size: 2.7rem;
 }
 
-#header img[alt="logo"] {
+#header img[alt='logo'] {
   height: 60px;
   border-radius: 50%;
 }
 
 #header .language-flag {
   width: 25px;
+}
+
+#header .mainLang {
+  display: flex;
+  font-size: 1.5rem;
+  padding: 5px;
+  width: 140px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+#header .language:nth-child(1) {
+  border: none;
+}
+
+#header .language {
+  display: flex;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 5px;
+  width: 140px;
+  border-top: 1px solid black;
+  font-family: 'Bebas Neue', cursive;
+}
+
+#header .dropdown {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+}
+
+#header .dropdown-content {
+  border: 1px solid black;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  border-radius: 7.5px;
+  background: var(--low-contrast);
+  top: 65px;
+  right: 0px;
+}
+
+#header .dropdown-content.active {
+  display: flex;
 }
