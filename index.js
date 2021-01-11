@@ -5,6 +5,9 @@ const dropdownContent = document.querySelector('.dropdown-content');
 function setLang(lang) {
   const langs = [en, pt];
   const langsObj = { en: en, pt: pt };
+  const newHeader = document.querySelector(`#${lang}`).innerHTML;
+  const header = document.querySelector('.mainLang');
+  header.innerHTML = newHeader;
   langs.forEach((lang) =>
     lang.forEach((element) => (element.style.display = 'none'))
   );
