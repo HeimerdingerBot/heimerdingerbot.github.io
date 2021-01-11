@@ -157,6 +157,12 @@ body {
   background: linear-gradient(45deg, rgb(82, 82, 226), rgb(197, 82, 243));
   font-family: 'Bebas Neue', cursive;
   font-size: 1.8rem;
+  transition: transform 500ms;
+}
+
+.addButton:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0px 0px 5px black;
 }
 
 /* FOOTER */
