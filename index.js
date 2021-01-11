@@ -1,3 +1,5 @@
+/* Dropdown & Language */
+
 const pt = document.querySelectorAll('span[lang=pt]');
 const en = document.querySelectorAll('span[lang=en]');
 const dropdownContent = document.querySelector('.dropdown-content');
@@ -12,13 +14,11 @@ function setLang(lang) {
     lang.forEach((element) => (element.style.display = 'none'))
   );
   langsObj[lang].forEach((element) => (element.style.display = 'block'));
+  localStorage.setItem('language', lang);
 }
 
-setLang('en'); // Change it to localStorarge in future
-
-document.querySelector(
-  'span#footer-date'
-).innerText = `2021 - ${new Date().getFullYear()}`;
+const language = localStorage.getItem('language');
+language === null ? setLang('en') : setLang(language);
 
 document.querySelector('body').addEventListener('close', function () {
   return dropdownContent.classList.remove('active');
@@ -33,3 +33,11 @@ window.addEventListener('click', (event) => {
 document.querySelector('.mainLang').addEventListener('click', function () {
   dropdownContent.classList.toggle('active');
 });
+
+/* FOOTER DATE */
+
+document.querySelector(
+  'span#footer-date'
+).innerText = `2021 - ${new Date().getFullYear()}`;
+
+/* */
