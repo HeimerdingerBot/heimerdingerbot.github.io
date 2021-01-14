@@ -206,6 +206,32 @@ body {
 }
 
 #page2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#commands {
+  background-color: #222831;
+  border: 1px solid #00adb5;
+  border-collapse: collapse;
+}
+
+#commands caption {
+  font-size: 2rem;
+}
+
+#commands th {
+  padding: 10px;
+  background-color: #393e46;
+}
+
+#commands tbody tr {
+  border-top: 1px solid #00adb5;
+}
+
+#commands td {
+  padding: 10px 3px 10px 10px;
 }
 
 /* FOOTER */
