@@ -30,20 +30,22 @@
 </head>
 <body>
   <header id="header">
+    <nav id="nav">
+      <a class="nav-item" href="#page1"><span lang="pt">Home</span><span lang="en">Home</span></a>
+      <a class="nav-item" href="#page2"><span lang="pt">Comandos</span><span lang="en">Commands</span></a>
+      <a class="nav-item" target="_blank" href="https://discord.com/invite/mx29k4RZNk"><span lang="pt">Suporte</span><span lang="en">Support</span></a>
+    </nav>
     <div class="logoDiv">
       <img alt="logo" src="./assets/logo.png" />
       <h1 id="hTitle">Heimerdinger Bot</h1>
     </div>
-    <nav>
-      <a href="#page1"><span lang="pt">Home</span><span lang="en">Home</span></a>
-      <a href="#page2"><span lang="pt">Comandos</span><span lang="en">Commands</span></a>
-      <a target="_blank" href="https://discord.com/invite/mx29k4RZNk"><span lang="pt">Suporte</span><span lang="en">Support</span></a>
-    </nav>
-    <div class="dropdown">
-      <h3 class="mainLang"> <img src="https://www.flaticon.com/svg/static/icons/svg/197/197484.svg" alt="" class="language-flag" /> &nbsp;&nbsp;English</h3>
-      <div class="dropdown-content">
-        <h4 onclick="setLang('en')" id="en" class="language"><img src="https://www.flaticon.com/svg/static/icons/svg/197/197484.svg" alt="" class="language-flag" /> &nbsp;&nbsp;English</h4>
-        <h4 onclick="setLang('pt')" id="pt" class="language"><img src="https://www.flaticon.com/svg/static/icons/svg/197/197386.svg" alt="" class="language-flag" /> &nbsp;&nbsp;Português</h4>
+    <div style="width: 300px; height: 100%;">
+      <div class="dropdown">
+        <h3 class="mainLang"> <img src="https://www.flaticon.com/svg/static/icons/svg/197/197484.svg" alt="" class="language-flag" /> &nbsp;&nbsp;English</h3>
+        <div class="dropdown-content">
+          <h4 onclick="setLang('en')" id="en" class="language"><img src="https://www.flaticon.com/svg/static/icons/svg/197/197484.svg" alt="" class="language-flag" /> &nbsp;&nbsp;English</h4>
+          <h4 onclick="setLang('pt')" id="pt" class="language"><img src="https://www.flaticon.com/svg/static/icons/svg/197/197386.svg" alt="" class="language-flag" /> &nbsp;&nbsp;Português</h4>
+        </div>
       </div>
     </div>
   </header>
