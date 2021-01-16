@@ -108,8 +108,15 @@ body {
   font-family: 'Bebas Neue', cursive;
 }
 
+#dropdown-container {
+  width: 300px;
+  height: 100%;
+}
+
 .dropdown {
-  display: block;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   height: 100%;
   cursor: pointer;
   position: relative;
@@ -279,7 +286,20 @@ body {
   font-size: 0.8rem;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 700px) {
+  #nav {
+    flex-basis: auto;
+  }
+  #dropdown-container {
+    width: auto;
+  }
+  .nav-item:nth-of-type(1),
+  .nav-item:nth-of-type(2) {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
   #hTitle {
     display: none;
   }
