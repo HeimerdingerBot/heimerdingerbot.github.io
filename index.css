@@ -255,10 +255,11 @@ body {
 }
 
 #commands tbody tr {
-  border-top: 1px solid #00adb5;
+  border-top: 1px solid var(--medium-contrast);
 }
 
 #commands td {
+  border-left: 1px solid var(--medium-contrast);
   padding: 10px 3px 10px 10px;
 }
 
