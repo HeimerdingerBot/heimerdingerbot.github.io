@@ -16,6 +16,10 @@
   --button-hover: #2e3035;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   max-width: 100%;
   overflow-x: hidden;
