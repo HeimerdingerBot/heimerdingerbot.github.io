@@ -40,4 +40,10 @@ document.querySelector(
   'span#footer-date'
 ).innerText = `2021 - ${new Date().getFullYear()}`;
 
-/* */
+/* SERVICE WORKER */
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./service-worker.js');
+  });
+};
