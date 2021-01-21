@@ -20,8 +20,22 @@ function setLang(lang) {
   setResponsive(width);
 }
 
+let navLang = navigator.language;
+switch(navLang) {
+  case "pt-BR":
+    navLang = "pt";
+    break;
+  case "en-US":
+    navLang = "en";
+    break;
+  default:
+    navLang = "en";
+    break;
+}
 let language = localStorage.getItem('language');
-language === null ? setLang('en') : setLang(language);
+language === null ? setLang(navLang) : setLang(language);
+
+
 
 document.querySelector('body').addEventListener('close', function () {
   return dropdownContent.classList.remove('active');
