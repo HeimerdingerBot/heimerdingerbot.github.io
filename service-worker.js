@@ -1,6 +1,5 @@
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open('cache-sw').then((cache) => cache.add('/')));
-  console.log('Installed!');
 });
 self.addEventListener("activate", () => {
   self.clients.claim();
