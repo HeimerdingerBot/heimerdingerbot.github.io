@@ -5,12 +5,14 @@
   <!-- Good morning curious man :D -->
   <title>Heimerdinger Discord Bot</title>
   <meta name="description"
-    content="Heimerdinger is a League of Legends Discord Bot, it has cool features to entertain and help you." />
+    content="Heimerdinger Bot is a League of Legends Discord Bot, it has cool features to entertain and help you." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charset="UTF-8" />
   <link rel="stylesheet" href="index.css" type="text/css" />
   <script defer src="index.js"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="apple-touch-icon" sizes="57x57" href="/assets/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/assets/apple-icon-60x60.png">
@@ -44,10 +46,14 @@
 <body>
   <header id="header">
     <nav id="nav">
-      <a class="nav-item" href="#page1"><span lang="pt">Home</span><span lang="en">Home</span></a>
-      <a class="nav-item" href="#page2"><span lang="pt">Comandos</span><span lang="en">Commands</span></a>
-      <a rel="noopener noreferrer" class="nav-item" target="_blank" href="https://discord.com/invite/mx29k4RZNk"><span
-          lang="pt">Suporte</span><span lang="en">Support</span></a>
+      <!-- <i style="font-size: 2rem;" class="fas fa-bars"></i> -->
+      <a class="nav-item" href="#page1"><i class="fas fa-home icon"></i>&nbsp;<span lang="pt"
+          class="responsive">Home</span><span lang="en" class="responsive">Home</span></a>
+      <a class="nav-item" href="#page2"><i class="fas fa-list icon"></i>&nbsp;<span lang="pt"
+          class="responsive">Comandos</span><span lang="en" class="responsive">Commands</span></a>
+      <a rel="noopener noreferrer" class="nav-item" target="_blank" href="https://discord.com/invite/mx29k4RZNk"><i
+          class="fas fa-headset icon"></i>&nbsp;<span lang="pt" class="responsive">Suporte</span><span lang="en"
+          class="responsive">Support</span></a>
     </nav>
     <div class="logoDiv">
       <img alt="logo" src="./assets/logo.png" />
@@ -161,8 +167,11 @@
   </div>
   <footer id="lfooter">
     <div id="footer">
-      <p class="lowSize">
+      <p>
         Heimerdinger Bot &copy; <span id="footer-date"></span>.
+      </p>
+      <br />
+      <p class="lowSize">
         Heimerdinger Bot isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone
         officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks
         or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc.
