@@ -134,7 +134,6 @@ body {
   border-radius: 7.5px;
   background: var(--low-contrast);
   top: 80px;
-  left: 0px;
 }
 
 .dropdown-content.active {
