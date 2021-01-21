@@ -248,6 +248,7 @@ body {
 }
 
 #commands {
+  font-family: 'Roboto', sans-serif;
   background-color: #222831;
   border: 1px solid #00adb5;
   border-collapse: collapse;
