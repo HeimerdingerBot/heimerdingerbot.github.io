@@ -71,7 +71,7 @@ function setResponsive(actualWidth) {
   const elementsPt = document.querySelectorAll('.responsive[lang=pt]');
   const elementsEn = document.querySelectorAll('.responsive[lang=en]');
   const langsObj = { en: elementsEn, pt: elementsPt };
-  if (actualWidth < 700) {
+  if (actualWidth < 800) {
     langsObj[language].forEach((el) => el.style.display = 'none');
   } else {
     langsObj[language].forEach((el) => el.style.display = 'inline');
